@@ -1,6 +1,11 @@
 import { Flex, Icon, Input } from "@chakra-ui/react";
 import { RiSearch2Line } from "react-icons/ri";
 
+// Form Ways
+// 1. Controlled Components (save values in state)
+// 2. Uncontrolled Components (use ref)
+// 3. Libs (Formik || React Hook Form || Unform)
+
 export function SearchBox() {
     return (
         <Flex

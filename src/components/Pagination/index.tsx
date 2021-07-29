@@ -1,12 +1,14 @@
-import { Box, Flex, Stack } from "@chakra-ui/react";
+import { Box, Flex, Stack, useBreakpointValue } from "@chakra-ui/react";
 import { PaginationItem } from "./PaginationItem";
 
 export function Pagination() {
     return (
-        <Flex
+        <Stack
+            spacing="3"
             mt="8"
             justify="space-between"
             align="center"
+            direction={["column", "row"]}
         >
             <Box w="100">
                 <strong>0</strong> - <strong>10</strong> de <strong>100</strong>
@@ -17,6 +19,6 @@ export function Pagination() {
                 <PaginationItem number={3} />
                 <PaginationItem number={4} />
             </Stack>
-        </Flex>
+        </Stack>
     )
 }

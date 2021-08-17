@@ -63,7 +63,7 @@ export default function SignIn() {
           size="lg"
           isLoading={formState.isSubmitting}
         >
-          SignIn
+          Sign In
         </Button>
       </Flex>
     </Flex>
